@@ -20,3 +20,6 @@ const resultPhrase = 'result is: '
 add(number1, number2, printResult, resultPhrase);
 // this console log is not necessary due to the if-statement
 // console.log(result);
+
+// if a variable has not been defined it is good practice to tell typescript the data type that it will store
+let number: number;
