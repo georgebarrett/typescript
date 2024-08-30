@@ -36,15 +36,14 @@ if (person.role === Role.SUPER_ADMIN) {
     console.log('hola mundo');
 }
 
+console.log(person);
+console.log(person.name)
+
 // empty variable but typescript is expecting a 
 let favouriteHobbies: string[];
 favouriteHobbies = ['writing'];
-
-console.log(person.name)
 
 // hobby is identified as a string. therefore i can autocomplete in-built methods like .toLowerCase()
 for (const hobby of person.hobbies) {
     console.log(hobby.toUpperCase());
 }
-
-console.log(person);
