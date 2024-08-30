@@ -4,11 +4,18 @@
 //     age: number
 // }
 
-const person = {
+const person: {
+    name: string;
+    age: number;
+    hobbies: string[];
+    // a tuple! bsasically an array with a defined structure. there must be two elements 1. is a number 2. is a string
+    role: [number, string];
+} = {
     name: 'george',
     age: 36,
     // string[] = typescript syntax for an array of strings
-    hobbies: ['writing', 'running']
+    hobbies: ['writing', 'running'],
+    role: [2, 'author']
 };
 
 // empty variable but typescript is expecting a 
