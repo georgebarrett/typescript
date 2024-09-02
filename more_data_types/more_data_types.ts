@@ -1,10 +1,14 @@
+// re-usable type aliases
+type Data = number | string;
+type LiteralTypes = 'as-number' | 'as-text'
+
 // adding pipelines allow for multiple data types but there has to be logic that distinguishes them
 const combine = (
         // union types
-        input1: number | string, 
-        input2: number | string,
+        input1: Data, 
+        input2: Data,
         // literal types. these are types that are based on the core union types but are more specific 
-        resultConversion: 'as-number' | 'as-text'
+        resultConversion: LiteralTypes
     ) => {
     let result;
     // number data type checker
