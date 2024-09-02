@@ -4,8 +4,14 @@ function add(number1: number, number2: number) {
 
 function printResult(number: number): void {
     // no return so typescript type is void
-    console.log('the result is:' + number);
+    console.log('the result is: ' + number);
 }
 
 // add is responsible for the logic. printResult is responsible for printing to the console
 printResult(add(6, 6));
+
+let combinedValues: Function;
+
+combinedValues = add;
+
+console.log(combinedValues(8, 8));
