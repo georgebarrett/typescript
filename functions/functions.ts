@@ -8,3 +8,10 @@ userInput = 'afx'
 if (typeof userInput === 'string') {
     userName = userInput;    
 }
+
+// the use of never ensures when the function is called, nothing is returned
+function generateError(message: string, code: number): never {
+    throw {message: message, errorCode: code};
+}
+
+generateError('ERROR', 404);
