@@ -7,6 +7,12 @@ function printResult(number: number): void {
     console.log('the result is: ' + number);
 }
 
+// a callback argument allows flexibility as the return value can be manipulated
+function addAndHandle(number1: number, number2: number, cb: (a: number) => void) {
+    const result = number1 + number2;
+    cb(result);
+}
+
 // add is responsible for the logic. printResult is responsible for printing to the console
 printResult(add(6, 6));
 
@@ -20,3 +26,8 @@ let combinedValues: (a: number, b: number) => number;
 combinedValues = add;
 
 console.log(combinedValues(8, 8));
+
+// typescript knows 'result' will be a number because it is inferred in the function definiton
+addAndHandle(2, 3, (result) => {
+    console.log(`the result is ${result}`);
+});
