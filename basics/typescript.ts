@@ -1,4 +1,4 @@
-const add = (number1: number, number2: number, showResult: boolean, phrase: string) => {
+function adding(number1: number, number2: number, showResult: boolean, phrase: string) {
     // console.log(typeof number1);
     // return number1 + number2;
 
@@ -13,11 +13,11 @@ const add = (number1: number, number2: number, showResult: boolean, phrase: stri
 
 const number1 = 5;
 const number2 = 2.8;
-const printResult = true;
+const printAddResult = true;
 const resultPhrase = 'result is: '
 
 
-add(number1, number2, printResult, resultPhrase);
+adding(number1, number2, printAddResult, resultPhrase);
 // this console log is not necessary due to the if-statement
 // console.log(result);
 
