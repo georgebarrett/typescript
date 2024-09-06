@@ -12,3 +12,11 @@ const planet = {
 
 // key value pairs are pulled out of the 'planet' object. usually to be added to another object
 const copiedPlanet = { ...planet };
+
+// rest parameters
+// 'numbers' is just a placeholder. the spread operator will merge 
+const addingAgain = (...numbers) => {
+
+};
+
+const addedNumbers = addingAgain(1, 2, 3, 4, 5, 6, 7);
