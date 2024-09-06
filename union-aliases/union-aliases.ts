@@ -2,6 +2,12 @@ function add(number1: number, number2: number) {
     return number1 + number2;
 }
 
+// use of default arguments
+// when i call the function i will only need to give it one argument becasue the other has a default
+// function add(number1: number, number2: number = 5) {
+//     return number1 + number2;
+// }
+
 function printResult(number: number): void {
     // no return so typescript type is void
     console.log('the result is: ' + number);
