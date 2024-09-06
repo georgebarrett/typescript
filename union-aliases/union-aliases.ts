@@ -3,6 +3,7 @@ function add(number1: number, number2: number) {
 }
 
 // use of default arguments
+// defaults have to be last in the arguments list
 // when i call the function i will only need to give it one argument becasue the other has a default
 // function add(number1: number, number2: number = 5) {
 //     return number1 + number2;
