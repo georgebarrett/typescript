@@ -5,17 +5,22 @@ const activeHobbies = ['RUNNING'];
 activeHobbies.push(...hobbies);
 // console.log(hobbies, activeHobbies);
 
+// destructuring the hobbies array
+// the destructured elements get pulled out in order
+// the rest of the elements par 0 and 1 will be stored in a new array called remainingHobbies
+const [hobby1, hobby2, ...remainingHobbies] = hobbies;
+
+console.log(hobbies, hobby1, hobby2);
+
 const planet = {
-    name: 'Saturn',
-    number: 7
+    planetName: 'Saturn',
+    numberFromSun: 7
 };
 
 // key value pairs are pulled out of the 'planet' object. creates a perfect copy and not just a pointer
 const copiedPlanet = { ...planet };
 
-// destructuring the hobbies array
-// the destructured elements increment through the hobbies array
-// the rest of the elements par 0 and 1 will be stored in a new array called remainingHobbies
-const [hobby1, hobby2, ...remainingHobbies] = hobbies;
+// when destructing objects the key needs to be specified 
+const { planetName, numberFromSun } = planet;
 
-console.log(hobbies, hobby1, hobby2);
+console.log(planetName, numberFromSun, planet);
