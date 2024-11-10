@@ -10,7 +10,7 @@ const planet = {
     number: 7
 };
 
-// key value pairs are pulled out of the 'planet' object. usually to be added to another object
+// key value pairs are pulled out of the 'planet' object. creates a perfect copy and not just a pointer
 const copiedPlanet = { ...planet };
 
 // rest parameters
